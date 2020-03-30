@@ -1,0 +1,25 @@
+QPushButton
+{
+  color: #ffffff;
+  background-color: #2d89ef;
+	border:none;
+  padding: 3px;
+  font-family:"Microsoft YaHei UI";
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #3c5bb9;
+}
+
+QLineEdit {
+    background-color: #eff4ff;
+    padding: 5px;
+    border-style: solid;
+    border: 1px solid #76797C;
+    border-radius: 2px;
+    font-size: 15px;
+    font-family:"Microsoft YaHei UI"
+    color: #1d1d1d;
+}
+

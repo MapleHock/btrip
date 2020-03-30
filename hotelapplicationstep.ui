@@ -1,0 +1,1927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HotelApplicationStep</class>
+ <widget class="QWizard" name="HotelApplicationStep">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Register your hotel at B trip</string>
+  </property>
+  <widget class="QWizardPage" name="welcom_page">
+   <property name="title">
+    <string>Welcom to B trip</string>
+   </property>
+   <property name="subTitle">
+    <string/>
+   </property>
+   <attribute name="pageId">
+    <string notr="true"/>
+   </attribute>
+   <widget class="QTextBrowser" name="welcome_words_browser">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>621</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;There are few steps to send application for your hotel&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;You can follow our guide to join B trip family&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Just follow it.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Here we go!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="openLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="notice_page">
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>681</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Notice &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;xxxxxxx&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="agree_radio">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>440</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+    spacing: 5px;
+}
+ 
+QRadioButton::indicator{
+    width: 15px;
+    height: 15px;
+}
+ 
+QRadioButton::indicator:checked{
+    image:url(:/qss/icon/radio-on-button.png);
+}
+
+QRadioButton::indicator:unchecked{
+    image:url(:/qss/icon/radio-off.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>I agree</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="reject_radio">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>440</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+    spacing: 5px;
+}
+ 
+QRadioButton::indicator{
+    width: 15px;
+    height: 15px;
+}
+ 
+QRadioButton::indicator:checked{
+    image:url(:/qss/icon/radio-on-button.png);
+}
+
+QRadioButton::indicator:unchecked{
+    image:url(:/qss/icon/radio-off.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>I reject</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="hotel_information_page">
+   <widget class="QLineEdit" name="name_lineedit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>157</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  padding-left: 27px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  padding-right: 50px;
+  background-image: url(:/qss/icon/hotel.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Hotel name*</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="city_lineedit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>155</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  padding-left: 25px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  padding-right: 50px;
+  background-image: url(:/qss/icon/location.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>City*</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="area_lineedit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>155</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  padding-left: 27px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/area.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Area*</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>10</y>
+      <width>20</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="credit_lineedit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>157</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  padding-left: 28px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  padding-right: 50px;
+  background-image: url(:/qss/icon/code.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>credit code*</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hotel_policies_label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Hotel Polices</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="check_in_timeedit">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>80</y>
+      <width>118</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;  
+       
+}
+QTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+   
+}
+
+QTimeEdit::up-button:hover,QDoubleSpinBox::up-button:hover,QSpinBox::up-button:hover {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;  
+       
+}
+QTimeEdit::down-button:hover,QDoubleSpinBox::down-button:hover,QSpinBox::down-button:hover {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;
+}
+
+QTimeEdit,QDoubleSpinBox,QSpinBox {
+   background-color:#ecf0f1;
+   border: 2px solid #2c3e50;
+   
+}</string>
+    </property>
+    <property name="displayFormat">
+     <string>h:mm</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>false</bool>
+    </property>
+    <property name="time">
+     <time>
+      <hour>14</hour>
+      <minute>0</minute>
+      <second>0</second>
+     </time>
+    </property>
+   </widget>
+   <widget class="QLabel" name="check_in_label">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>50</y>
+      <width>131</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 30px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/time.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>check in time:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="check_out_label">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>110</y>
+      <width>151</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 30px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/time.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>check out time:</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="check_out_timeedit">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>118</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;  
+       
+}
+QTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+   
+}
+
+QTimeEdit::up-button:hover,QDoubleSpinBox::up-button:hover,QSpinBox::up-button:hover {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;  
+       
+}
+QTimeEdit::down-button:hover,QDoubleSpinBox::down-button:hover,QSpinBox::down-button:hover {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;
+}
+
+QTimeEdit,QDoubleSpinBox,QSpinBox {
+   background-color:#ecf0f1;
+   border: 2px solid #2c3e50;
+   
+}</string>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::UpDownArrows</enum>
+    </property>
+    <property name="currentSection">
+     <enum>QDateTimeEdit::HourSection</enum>
+    </property>
+    <property name="displayFormat">
+     <string>h:mm</string>
+    </property>
+    <property name="time">
+     <time>
+      <hour>12</hour>
+      <minute>0</minute>
+      <second>0</second>
+     </time>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="children_adult_spinbox">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>180</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;  
+       
+}
+QTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+   
+}
+
+QTimeEdit::up-button:hover,QDoubleSpinBox::up-button:hover,QSpinBox::up-button:hover {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;  
+       
+}
+QTimeEdit::down-button:hover,QDoubleSpinBox::down-button:hover,QSpinBox::down-button:hover {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;
+}
+
+QTimeEdit,QDoubleSpinBox,QSpinBox {
+   background-color:#ecf0f1;
+   border: 2px solid #2c3e50;
+   
+}</string>
+    </property>
+    <property name="suffix">
+     <string> child(ren) per adult</string>
+    </property>
+    <property name="prefix">
+     <string>max </string>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="is_pet_allow_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>230</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is pet allowed</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="is_free_breakfast_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>260</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is free breakfast</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>290</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>other polices:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="others_textedit">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>320</y>
+      <width>201</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}
+
+
+</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>10</y>
+      <width>20</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Amenities_label">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>20</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Amenities</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="wifi_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>80</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is free wifi</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="airport_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>120</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is airport pickup</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="parking_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>160</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is free parking</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="front24_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>200</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is 24hours front</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="nonsomking_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>240</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is non smoking floor</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="luggage_storage_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>280</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is luggage storage</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="wakeup_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>320</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is wake up service</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cloth_service_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>360</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>is cloth service</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="basic_information_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Basic information</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="error_label_info">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>410</y>
+      <width>211</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 30px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/error.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>error</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="room_page">
+   <widget class="QPushButton" name="add_button">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>200</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+	border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/add.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/tick.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>20</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_button">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>410</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+	border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/cross.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/cross.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="copy_button">
+    <property name="geometry">
+     <rect>
+      <x>454</x>
+      <y>410</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+	border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+	background-repeat:no-repeat;
+	background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>Copy for similar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="enter_tip_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>enter your rooms informaion</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="rooms_list">
+    <property name="geometry">
+     <rect>
+      <x>455</x>
+      <y>20</y>
+      <width>291</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <property name="columnCount">
+     <number>9</number>
+    </property>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QLabel" name="error_label_room">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>281</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 30px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/error.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>error</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>90</y>
+      <width>261</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="normal_page">
+     <widget class="QLineEdit" name="self_define_type_lineedit">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>164</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  padding-left: 25px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  padding-right: 50px;
+  background-image: url(:/qss/icon/kind.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>room type</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="room_number_lineedit">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>164</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  padding-left: 25px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  padding-right: 50px;
+  background-image: url(:/qss/icon/number8.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>room number</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="size_spinox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>164</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;  
+       
+}
+QTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+   
+}
+
+QTimeEdit::up-button:hover,QDoubleSpinBox::up-button:hover,QSpinBox::up-button:hover {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;  
+       
+}
+QTimeEdit::down-button:hover,QDoubleSpinBox::down-button:hover,QSpinBox::down-button:hover {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;
+}
+
+QTimeEdit,QDoubleSpinBox,QSpinBox {
+   background-color:#ecf0f1;
+   border: 2px solid #2c3e50;
+   
+}</string>
+      </property>
+      <property name="suffix">
+       <string> sq.m</string>
+      </property>
+      <property name="prefix">
+       <string> size:         </string>
+      </property>
+      <property name="singleStep">
+       <number>5</number>
+      </property>
+      <property name="value">
+       <number>5</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="floor_spinbox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>164</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;  
+       
+}
+QTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+   
+}
+
+QTimeEdit::up-button:hover,QDoubleSpinBox::up-button:hover,QSpinBox::up-button:hover {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;  
+       
+}
+QTimeEdit::down-button:hover,QDoubleSpinBox::down-button:hover,QSpinBox::down-button:hover {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;
+}
+
+QTimeEdit,QDoubleSpinBox,QSpinBox {
+   background-color:#ecf0f1;
+   border: 2px solid #2c3e50;
+   
+}</string>
+      </property>
+      <property name="suffix">
+       <string> (floor)</string>
+      </property>
+      <property name="prefix">
+       <string>at           </string>
+      </property>
+      <property name="minimum">
+       <number>-10</number>
+      </property>
+      <property name="maximum">
+       <number>80</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="price_lineedit">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>164</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  padding-left: 25px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  padding-right: 50px;
+  background-image: url(:/qss/icon/price.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>price</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="noticce_bed_type_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>bed type:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="bed_type_combobox">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>230</y>
+        <width>81</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+	border:2px solid #1d1d1d;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+	text-align: center;
+}
+
+
+  QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+ 
+    border-left-width: 1px;
+    border-left-color: #1d1d1d;
+    border-left-style: solid; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/qss/icon/double_down.png);
+}
+
+
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>single</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>double</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>king size</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>more</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QCheckBox" name="window_checkbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>270</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>is with window</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="bathroom_checkbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>310</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>is with bathroom</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="add_bed_checkbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>340</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>is able to add bed</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="copy_page">
+     <widget class="QLineEdit" name="copy_min_num_lineedit">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}
+
+
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>min room number*</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="copy_wave_label">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>160</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft JhengHei UI</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>~</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="copy_max_num_lineedit">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}
+
+
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>max room number*</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="copy_floor_lineedit">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>230</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>floor</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="copy_done_button">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>270</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+	border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/copy.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/copy.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}</string>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="copy_cancel_button">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>270</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+	border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/cross.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/cross.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}</string>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="copy_notice_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>blank with * is mandatory</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="copy_notice_label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+}</string>
+      </property>
+      <property name="text">
+       <string>only pure num room can be copyed</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="copy_row_spinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>90</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;  
+       
+}
+QTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+   
+}
+
+QTimeEdit::up-button:hover,QDoubleSpinBox::up-button:hover,QSpinBox::up-button:hover {subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/qss/icon/double-right.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;  
+       
+}
+QTimeEdit::down-button:hover,QDoubleSpinBox::down-button:hover,QSpinBox::down-button:hover {subcontrol-origin:border;
+    subcontrol-position:left;
+    border-image: url(:/qss/icon/double-left.png);
+    width: 14px;
+    height: 20px;
+    background-color: #95a5a6;
+}
+
+QTimeEdit,QDoubleSpinBox,QSpinBox {
+   background-color:#ecf0f1;
+   border: 2px solid #2c3e50;
+   
+}</string>
+      </property>
+      <property name="suffix">
+       <string/>
+      </property>
+      <property name="prefix">
+       <string>copy the room at row </string>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="finish_page">
+   <property name="title">
+    <string>Finish</string>
+   </property>
+   <property name="subTitle">
+    <string/>
+   </property>
+   <widget class="QLabel" name="wait_label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>731</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>please wait our checking, and you can know the checking situation through your default account.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="notice_username_label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>120</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>username:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="notice_password_label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>150</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>password:(remember to reset it)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="username_label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>120</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>xxx</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="password_label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>150</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>btrip</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

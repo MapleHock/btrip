@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HotelManaerTab</class>
+ <widget class="QTabWidget" name="HotelManaerTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft JhengHei UI</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TODO</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  background-color: #eff4ff;
+}</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <property name="movable">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="booking_tab">
+   <attribute name="title">
+    <string>                                                          bookings                                           </string>
+   </attribute>
+   <widget class="QTableWidget" name="receive_table">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>311</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QTableWidget" name="unfinish_table">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>50</y>
+      <width>291</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QPushButton" name="accept_button">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>450</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: center;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/tick.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/tick.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Accept</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reject_button">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>450</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: center;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/cross.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/cross.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Reject</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="error_booking_label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>321</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 30px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/error.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>error</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="finish_button">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>460</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: right;
+  padding-right: 20px;
+  background-image: url(:/qss/icon/go_away.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>finish</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="room_manage_tab">
+   <attribute name="title">
+    <string>                                            room manage                                                             </string>
+   </attribute>
+   <widget class="QTableWidget" name="room_table">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>311</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QGroupBox" name="setprice_groupbox">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>50</y>
+      <width>191</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox 
+{
+  border: 1px solid #1d1d1d;
+  border-top: 1px solid #1d1d1d;
+  padding: 5px
+}
+
+ 
+QGroupBox::title
+{
+   
+border: 1px solid #1d1d1d;
+    border-bottom: none;
+    border-letf:none;
+    border-right:none;
+     padding: -20 5px;  
+    
+}</string>
+    </property>
+    <property name="title">
+     <string>set price</string>
+    </property>
+    <widget class="QLineEdit" name="pirce_lineedit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}
+
+
+</string>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>new price</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="reset_price_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+	border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+  text-align: right;
+  padding-right: 5px;
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Reset Price</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="reset_price_similar_button">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+	border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 5px;
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Reset similar</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="searchroom_groupbox">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>50</y>
+      <width>191</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox 
+{
+  border: 1px solid #1d1d1d;
+  border-top: 1px solid #1d1d1d;
+  padding: 5px
+}
+
+ 
+QGroupBox::title
+{
+   
+border: 1px solid #1d1d1d;
+    border-bottom: none;
+    border-letf:none;
+    border-right:none;
+     padding: -20 5px;  
+    
+}</string>
+    </property>
+    <property name="title">
+     <string>search</string>
+    </property>
+    <widget class="QLineEdit" name="room_type_lineedit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit
+{
+  color: #1d1d1d;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}
+
+
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>room type</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search_button">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: right;
+  padding-right: 20px;
+  background-image: url(:/qss/icon/search.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>search</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="booking_group">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>170</y>
+      <width>391</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox 
+{
+  border: 1px solid #1d1d1d;
+  border-top: 1px solid #1d1d1d;
+  padding: 5px
+}
+
+ 
+QGroupBox::title
+{
+   
+border: 1px solid #1d1d1d;
+    border-bottom: none;
+    border-letf:none;
+    border-right:none;
+     padding: -20 5px;  
+    
+}</string>
+    </property>
+    <property name="title">
+     <string>booking dates</string>
+    </property>
+    <widget class="QTableWidget" name="booking_date_list">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>30</y>
+       <width>256</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="columnCount">
+      <number>1</number>
+     </property>
+     <column>
+      <property name="text">
+       <string>date</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetailDialog</class>
+ <widget class="QDialog" name="DetailDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Details for this hotel</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #eff4ff;
+}</string>
+  </property>
+  <widget class="QLabel" name="name_label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>221</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>name:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="booking">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>540</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: right;
+  padding-right: 20px;
+  background-image: url(:/qss/icon/this.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>booking this</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="number_spin_box">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>550</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string>   room(s)</string>
+   </property>
+   <property name="value">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="other_treewidget">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>140</y>
+     <width>256</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>other useful details</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="review_label">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>40</y>
+     <width>241</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>review</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="rooms_list">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>140</y>
+     <width>391</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="columnCount">
+    <number>4</number>
+   </property>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QLabel" name="error_label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>540</y>
+     <width>341</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 30px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/error.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}</string>
+   </property>
+   <property name="text">
+    <string>error</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

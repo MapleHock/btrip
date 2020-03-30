@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdministratorTab</class>
+ <widget class="QTabWidget" name="AdministratorTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei UI</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  background-color: #eff4ff;
+}</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="booking_tab">
+   <attribute name="title">
+    <string>booking</string>
+   </attribute>
+   <widget class="QGroupBox" name="workplace_group">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>130</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox 
+{
+  border: 1px solid #1d1d1d;
+  border-top: 1px solid #1d1d1d;
+  padding: 5px
+}
+
+ 
+QGroupBox::title
+{
+   
+border: 1px solid #1d1d1d;
+    border-bottom: none;
+    border-letf:none;
+    border-right:none;
+     padding: -20 5px;  
+    
+}</string>
+    </property>
+    <property name="title">
+     <string>work place</string>
+    </property>
+    <widget class="QLabel" name="share_percent_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>share percent</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="share_spinbox">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="suffix">
+      <string>%</string>
+     </property>
+     <property name="decimals">
+      <number>1</number>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+     <property name="value">
+      <double>5.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="check_button">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: center;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/tick.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/tick.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>check</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="hold_booking_button">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: center;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/wait.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/wait.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>hold</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="performance_groupbox">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>290</y>
+      <width>231</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox 
+{
+  border: 1px solid #1d1d1d;
+  border-top: 1px solid #1d1d1d;
+  padding: 5px
+}
+
+ 
+QGroupBox::title
+{
+   
+border: 1px solid #1d1d1d;
+    border-bottom: none;
+    border-letf:none;
+    border-right:none;
+     padding: -20 5px;  
+    
+}</string>
+    </property>
+    <property name="title">
+     <string>performance today</string>
+    </property>
+    <widget class="QLabel" name="total_check_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 25px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/tick.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Total check:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="total_share_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 25px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/price.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Total share:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="error_booking_label">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>60</y>
+      <width>211</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 30px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/error.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>error</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="booking_list">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>371</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView {
+  background-color:	#ffffff;
+}</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>booking for you to check</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="app_tab">
+   <attribute name="title">
+    <string>application</string>
+   </attribute>
+   <widget class="QPushButton" name="hold_app_button">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>130</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: center;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/wait.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/wait.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Hold</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="check_app_button">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>220</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  color: #1d1d1d;
+  background-color: #bdc3c7;
+  border:none;
+  padding: 3px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: center;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #95a5a6;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/tick.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/tick.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>check</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="check_app_label">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>340</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Total check app:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="app_num_label">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>350</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>num</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="error_application_label">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>60</y>
+      <width>211</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+  color: #1d1d1d;
+  background-color: none;
+  border: none;
+  padding-left: 30px;
+  font-family:&quot;Microsoft YaHei UI&quot;;
+  text-align: left;
+  background-image: url(:/qss/icon/error.png);
+  background-repeat:no-repeat;
+  background-position: center left;
+}</string>
+    </property>
+    <property name="text">
+     <string>error</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="app_treewidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>371</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>1</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>application for you to check</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

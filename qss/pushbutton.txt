@@ -1,0 +1,41 @@
+QPushButton
+{
+  color: #ffffff;
+  background-color: #2d89ef;
+	border:none;
+  padding: 3px;
+  font-family:"Microsoft YaHei UI";
+	text-align: center;
+}
+
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+  background-color:  #3c5bb9;
+	text-align: right;
+	padding-right: 20px;
+
+}
+QPushButton:hover
+{
+  background-image: url(:/qss/icon/appbar.navigate.next.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+  background-image: url(:/qss/icon/appbar.navigate.next.png);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+
+QLineEdit {
+    background-color: #eff4ff;
+    padding: 5px;
+    border-style: solid;
+    border: 1px solid #76797C;
+    border-radius: 2px;
+    font-size: 15px;
+    font-family:"Microsoft YaHei UI"
+    color: #1d1d1d;
+}
+

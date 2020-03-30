@@ -1,0 +1,12 @@
+*.d
+*.obj
+*.o
+*.tlog
+*.lastbuildstate
+*.idb
+*.pdb
+*~
+*.swp
+*.dll
+*.png
+*.ico
